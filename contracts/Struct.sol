@@ -24,10 +24,11 @@ contract Struct {
         return (p.idade, p.nome);
     }
     // finalizar desafio obter pessoa pelo nome
-    function ObterPessoaPeloNome(string _nome) public view returns (uint idade, string storage nome) {
+    function ObterPessoaPeloNome(string memory _nome) public view returns (uint idade, string memory nome) {
         uint i = 0;
         for(i = 0; i < listaPessoas.length-1; i++) {
-            if(_nome == listaPessoas[i].nome) {
+            string memory nomeLista = listaPessoas[i].nome;
+            if(keccak256(bytes(_nome)) == keccak256(bytes(nomeLista))) {
                 return (listaPessoas[i].idade, listaPessoas[i].nome);
             }
         }
