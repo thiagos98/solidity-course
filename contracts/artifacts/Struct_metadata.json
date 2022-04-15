@@ -1,0 +1,162 @@
+{
+	"compiler": {
+		"version": "0.8.10+commit.fc410830"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_indice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_idade",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_nome",
+						"type": "string"
+					}
+				],
+				"name": "AtualizarPessoa",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_indice",
+						"type": "uint256"
+					}
+				],
+				"name": "DeletarPessoa",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_idade",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_nome",
+						"type": "string"
+					}
+				],
+				"name": "InserirPessoas",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_indice",
+						"type": "uint256"
+					}
+				],
+				"name": "ObterPessoa",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "idade",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "nome",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ObterPessoas",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "idade",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "nome",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Struct.Pessoa[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "TotalDePessoas",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Struct.sol": "Struct"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Struct.sol": {
+			"keccak256": "0x0bd2ec1f135bd774e448497d0b72588afc1d0be2d57a33dfd1628bca9f0d54fe",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://d33608ab53fcf0911dad3b6da1665dbc717f786e24c40572a6a6b1075338c43e",
+				"dweb:/ipfs/QmXPWAxeX5T9pnpnWGmZnfoAam4GU4YVe8NDq3c5aMiPLc"
+			]
+		}
+	},
+	"version": 1
+}
